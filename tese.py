@@ -1,11 +1,16 @@
-userDictionary = {}
-print("set up dictionary")
-while True:
-    print("Name of products? (if no more products, input -1)")
-    userInfo = input()
-    if userInfo == -1:
-        break
-    userDictionary[userInfo] = []
+import tkinter as tk
+root = tk.Tk()
 
+root.geometry("800x500")
+root.title("My first GUI")
 
+label = tk.Label(root, text="HelloWorld!",font=('Arial', 18))
+label.pack(padx=20, pady=20)
 
+textbox = tk.Text(root, font=('Arial', 18))
+textbox.pack()
+
+myentry = tk.Entry(root)
+myentry.pack()
+
+root.mainloop()
