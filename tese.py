@@ -10,7 +10,4 @@ label.pack(padx=20, pady=20)
 textbox = tk.Text(root, font=('Arial', 18))
 textbox.pack()
 
-myentry = tk.Entry(root)
-myentry.pack()
-
 root.mainloop()
